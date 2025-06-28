@@ -1,0 +1,91 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f2f2f2;
+  margin: 0;
+  padding: 20px;
+}
+
+.card {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #5D4037;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.info {
+  text-align: center;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  justify-items: auto;
+}
+
+button {
+  background: #6D4C41;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 10px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #8D6E63;
+}
+
+ul, ol {
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+li:hover {
+  background: #efebe9;
+  transition: background 0.3s;
+}
+
+.hidden {
+  display: none;
+}
+
+.progress-container {
+  height: 10px;
+  width: 100%;
+  background: #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+#progress-bar {
+  width: 0%;
+  height: 100%;
+  background: #4CAF50;
+  transition: width 0.5s;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .card {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
