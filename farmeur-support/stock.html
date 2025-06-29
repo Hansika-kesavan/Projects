@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stock Management</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <h1>Stock Management</h1>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./stock.html" aria-current="page">Stock Management</a></li>
+        <li><a href="./analytics.html">Business Analytics</a></li>
+        <li><a href="./about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Your Product Stock</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Current Stock</th>
+            <th>Add/Remove</th>
+          </tr>
+        </thead>
+        <tbody id="stock-table-body">
+          <!-- Dynamic stock rows will be rendered here by JS -->
+        </tbody>
+      </table>
+      <form id="add-product-form">
+        <h3>Add New Product</h3>
+        <input type="text" id="product-name" placeholder="Product Name" required>
+        <input type="number" id="product-qty" placeholder="Quantity" min="1" required>
+        <button type="submit">Add Product</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Farmeur Support</p>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+</html>
